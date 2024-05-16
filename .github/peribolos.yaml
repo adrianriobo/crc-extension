@@ -1,0 +1,5 @@
+required_orgs:
+  - org: redhat
+    users:
+      - username: adrianriobo
+        permission: write  # Adjust permission level as needed (read, write, admin)
