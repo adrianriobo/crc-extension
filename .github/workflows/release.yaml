@@ -21,6 +21,7 @@ on:
   push:
     branches:
       - 'main'
+  pull_request:
 
 jobs:
   release:
@@ -48,5 +49,5 @@ jobs:
           context: .
           file: oci/Containerfile.multistage
           platforms: linux/amd64,linux/arm64
-          push: true
-          tags: ghcr.io/crc-org/crc-extension:latest
+          push: false
+          tags: ghcr.io/adrianriobo/crc-extension:latest
